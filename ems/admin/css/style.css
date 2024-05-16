@@ -1,0 +1,66 @@
+    .navbar {
+      background-color: skyblue !important; /* Sky blue background color */
+    }
+
+    .sidebar {
+      width: 250px;
+      background-color: #343a40; /* Dark background color */
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+    }
+
+    .sidebar a {
+      padding: 10px 15px;
+      text-decoration: none;
+      font-size: 16px;
+      color: #f8f9fa; /* Light text color */
+      display: block;
+    }
+
+    .sidebar a:hover {
+      background-color: #495057; /* Darker background color on hover */
+    }
+
+    .content {
+      margin-left: 250px;
+      padding: 20px;
+    }
+
+    .navbar-brand {
+      color: #f8f9fa; /* Light text color */
+    }
+
+    .navbar-nav .nav-link {
+      color: #f8f9fa !important; /* Light text color */
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #f8f9fa !important; /* Light text color on hover */
+    }
+
+    .category {
+      background-color: #f8f9fa; /* Light background color */
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .category h3 {
+      color: #343a40; /* Dark text color */
+      margin-bottom: 15px;
+    }
+
+    .category .category-item {
+      border: 1px solid #dee2e6;
+      border-radius: 5px;
+      padding: 15px;
+      margin-bottom: 10px;
+    }
+
+    .category .category-item i {
+      margin-right: 10px;
+    }
+
+    .sidebar-item i {
+      margin-right: 10px;
+    }
