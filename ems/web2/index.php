@@ -300,7 +300,7 @@ section{
                     <a href="#">Home</a>
                     <a href="about.php">About</a>
                     <a href="venues.php">Venues</a>
-                    <a href="#footer">Contact</a>
+                    <a href="contact.php">Contact</a>
                 </div>
             </div>
         </div>

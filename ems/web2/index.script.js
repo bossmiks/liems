@@ -33,3 +33,9 @@ var sliderNav = function(manual){
             sliderNav(i)
         });
     });
+
+$(".hover").mouseleave(
+    function (){
+        $(this).removeClass("hover");
+    }
+);

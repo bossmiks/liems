@@ -277,7 +277,7 @@ footer{
                     <a href="index.php">Home</a>
                     <a href="about.php">About</a>
                     <a href="#">Venues</a>
-                    <a href="#footer">Contact</a>
+                    <a href="contact.php">Contact</a>
                 </div>
             </div>
         </div>
