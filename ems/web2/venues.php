@@ -73,41 +73,89 @@ section{
 }
 
 .container{
-    display: flex;
-    width: 100%;
-    padding: 4% 2%;
-    box-sizing: border-box;
-    height: 100vh;
-}
-
-.container .box{
-    flex: 1;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
     overflow: hidden;
-    transition: .5s;
-    margin: 0 2%;
-    box-shadow: 0 20px 30px rgba(0, 0, 0, .1);
-    line-height: 0;
-}
-
-.box > img{
-    width: 200%;
-    height: calc(100% - 10vh);
-    object-fit: cover;
-    transition: .5s;
-}
-
-.box > span{
-    font-size: 3.8vh;
-    display: block;
-    text-align: center;
-    height: 10vh;
-    line-height: 2.6;
-}
-
-.box:hover{ flex: 1 1 50%;}
-.box:hover > img {
+    margin: 20px;
+    min-width: 420px;
+    max-width: 580px;
     width: 100%;
-    height: 100%;
+    color: #141414;
+    text-align: left;
+    line-height: 1.5em;
+    font-size: 17px;
+}
+
+.container *{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+.venues{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    margin: 220px;
+}
+
+.container img{
+    max-width: 100%;
+    vertical-align: top;
+}
+
+.container .text{
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #fff;
+    padding: 15px 25px 65px;
+}
+
+.container .text:before{
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: -webkit-linear-gradient(top, transparent 0%, #fff 100%);
+    background-image: linear-gradient(to bottom, transparent 0%, #fff 100%);
+}
+
+.container h3,
+.container p{
+    margin: 0 0 10px;
+}
+
+.container h3{
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.3em;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+.container p{
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+
+.container a{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.container:hover .text,
+.container.hover .text{
+    top: 90px;
 }
 
 footer{
@@ -237,39 +285,49 @@ footer{
     
     <section class="venues">
         <div class="container">
-            <div class="box">
-                <img src="venues-images/the-marison-hotel.jpg" alt="">
-                <span>Marison Hotel</span>
+            <img src="venues-images/Concourse-Convention-Center.jpg" alt="">
+            <div class="text">
+                <h3>Concourse Convention Center</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum massa ligula, gravida eget hendrerit non, condimentum ac est. Pellentesque rhoncus,</p>
             </div>
-            <div class="box">
-                <img src="venues-images/oriental.webp" alt="">
-                <span>Oriental Hotel</span>
-            </div>
-            <div class="box">
-                <img src="venues-images/proxy-by-oriental.jpeg" alt="">
-                <span>Proxy</span>
-            </div>
-            <div class="box">
-                <img src="venues-images/Untitled.jpg" alt="">
-                <span>AVP</span>
-            </div>
-            <div class="box">
-                <img src="venues-images/the-marison-hotel.jpg" alt="">
-                <span>Ipsum</span>
-            </div>
-            <div class="box">
-                <img src="venues-images/the-marison-hotel.jpg" alt="">
-                <span>Ipsum</span>
-            </div>
-            <div class="box">
-                <img src="venues-images/la piazza.jpg" alt="">
-                <span>La Piazza</span>
-            </div>
-            <div class="box">
-                <img src="venues-images/Concourse-Convention-Center.jpg" alt="">
-                <span>Concourse</span>
+            <a href=""></a>
+        </div>
+        <div class="container">
+            <img src="venues-images/proxy-by-oriental.jpeg" alt="">
+            <div class="text">
+                <h3>Proxy by: The Oriental - Albay</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum massa ligula, gravida eget hendrerit non, condimentum ac est. Pellentesque rhoncus,</p>
             </div>
         </div>
+        <div class="container">
+            <img src="venues-images/la piazza.jpg" alt="">
+            <div class="text">
+                <h3>La Piazza Hotel & Convention Center</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum massa ligula, gravida eget hendrerit non, condimentum ac est. Pellentesque rhoncus,</p>
+            </div>
+        </div>
+        <div class="container">
+            <img src="venues-images/the-marison-hotel.jpg" alt="">
+            <div class="text">
+                <h3>The Marison Hotel</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum massa ligula, gravida eget hendrerit non, condimentum ac est. Pellentesque rhoncus,</p>
+            </div>
+        </div>
+        <div class="container">
+            <img src="venues-images/untitled.jpg" alt="">
+            <div class="text">
+                <h3>AVP Catering Services</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum massa ligula, gravida eget hendrerit non, condimentum ac est. Pellentesque rhoncus,</p>
+            </div>
+        </div>
+        <div class="container">
+            <img src="venues-images/st. ellis.jpg" alt="">
+            <div class="text">
+                <h3>Hotel St. Ellis</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum massa ligula, gravida eget hendrerit non, condimentum ac est. Pellentesque rhoncus,</p>
+            </div>
+        </div>
+        
     </section>
     <footer>
         <div class="footer-content">
